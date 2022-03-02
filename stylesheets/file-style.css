@@ -43,7 +43,7 @@ footer p{
     border-right: 2px solid gray;
     padding: 1em;
 }
-#home-img,#file-img{
+.side-imgs{
     height: 15px
 }
 aside{
@@ -170,4 +170,7 @@ main{
     grid-column-gap: 4px;
     grid-row-gap: 10px;
     grid-template-columns: auto auto auto auto;
+}
+.side-box-btn:hover{
+ color: rgb(226, 21, 182);
 }

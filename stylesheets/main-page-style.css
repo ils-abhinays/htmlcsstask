@@ -125,9 +125,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-#hi:hover{
-    border-left: 4px solid rgb(226, 21, 182);
-}
+
 .side-box-btn:hover{
     color:rgb(226, 21, 182);
 }
