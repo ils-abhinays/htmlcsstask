@@ -10,7 +10,7 @@ function test()
 
     return false;
 }
-// ------------------------------------------------
+// --------------------------------------
 function test2() 
 {
     let elm = document.getElementById("img-b");
@@ -97,7 +97,11 @@ function test8()
 
     let x = document.getElementById("heading-h");
     let y = x.textContent;
+<<<<<<< HEAD
     localStorage.setItem("val", y); 
+=======
+    localStorage.setItem("val", y);
+>>>>>>> 7f9f424399db6275f9334f0625555f65c927abc8
 
     return false;
 }
