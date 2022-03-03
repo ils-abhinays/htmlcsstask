@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="stylesheets/bvss-view-img-style.css">
 </head>
 <link rel="html" href="files.html">
-
+<!-- <script defer src="j-script.js"></script> -->
 <body>
     <main>
         <div class="top-content">
-            
+            <h2 id="header"></h2>
             <a href="files.html"><img src="icon-pngs/cross-x.png" alt=""></a>
         </div>
         <div id="img-bvss">
-            <img src="images/bvss.jpg" alt="">
+            <img id="x-img" src="" alt="">
         </div>
         <div id="nav-img">
             <a href="index.html">home ></a>
@@ -44,9 +44,10 @@
             <h2>Created on: 30/02/2022</h2>
         </div>
     </main>
+    <script>
+        document.getElementById("header").innerHTML=localStorage.getItem("val");
+        let ss=localStorage.getItem("val-img");
+        document.getElementById("x-img").src=ss; 
+    </script>
 </body>
-<script>
-    let ch=document.getElementById("first-img");
-    document.write(ch);
-</script>
 </html>
