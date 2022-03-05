@@ -5,73 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>files</title>
+    <title>Document</title>
     <link rel="stylesheet" href="stylesheets/file-style.css">
-    <!-- <script src="j-script.js"></script> -->
 </head>
 
 <body>
     <header>
-        <span>
-            <h1>SYNAPSE LLC</h1>
-            <p>Powered By Ilead Group</p>
-        </span>
-        <a href="notification.html "><img src="icon-pngs/bell3.png" alt="bell2" id="noti"></a>
-        <input list="profile-data" name="profile-bar" id="profile-bar" style="height: 25px; margin-left: 20px ;">
-        <datalist id="profile-data">
-            <option value="Profile">
-            <option value="Photos">
-            <option value="Setting">
-            <option value="notification">
-            <option value="Log Out">
-        </datalist>
+        <div class="top-content">
+            <div class="top-heading">
+                <h1>Synapse LLC</h1>
+                <p>Powered By Ilead Group</p>
+            </div>
+            <a href="notification.html"><img src="icon-pngs/bell3.png" alt=""></a>
+            <input type="text" id="input">
+        </div>
+        <div class="toggle">
+            <label for="c-box">
+                <p></p>
+                <p></p>
+                <p></p>
+            </label>
+        </div>
     </header>
     <main>
-        <div>
-            <aside>
-                <br>
-                <span>
-                    <img src="icon-pngs/homepng.png" alt="" id="home-img" class="side-imgs">
-                    <a class="side-box-btn" href="report.html"> Reports</a>
-                </span>
-                <span style="border-left: 4px solid rgb(226, 21, 182);">
-                    <img src="icon-pngs/imageicon.png" alt="" id="file-img" class="side-imgs">
-                    <a href="file.html" style="color: rgb(226, 21, 182);">Files</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-cal.png" alt="" id="event-img" class="side-imgs">
-                    <a class="side-box-btn" href="event.html">Event</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-peoples.png" alt="" id="home-img" class="side-imgs">
-                    <a class="side-box-btn" href="c-account.html">Customer Account</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-staff.png" alt="" id="staff-img" class="side-imgs">
-                    <a class="side-box-btn" href="staff.html">Staff</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-producer.png" alt="" id="producer-img" class="side-imgs">
-                    <a class="side-box-btn" href="producer.html">Producers</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-order.png" alt="" id="orders-img" class="side-imgs">
-                    <a class="side-box-btn" href="orders.html">Orders</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-chat.png" alt="" id="z-chat-img" class="side-imgs">
-                    <a class="side-box-btn" href="z-chat.html">Zendesk Chat</a>
-                </span>
-            </aside>
-        </div>
-        <!-- ---------------------------------------------------------------------- -->
-        <div id="main">
+        <input type="checkbox" name="" id="c-box">
+        <aside>
+            <div class="side-bar" id="report-btn">
+                <img src="icon-pngs/homepng.png" alt="">
+                <a  class="side-btn" href="report.html" >Reports</a>
+            </div>
+            <div class="side-bar" id="file-btn">
+                <img src="icon-pngs/imageicon.png" alt="">
+                <a class="side-btn" href=".html" style="color: rgb(226, 21, 182);">Files</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-cal.png" alt="">
+                <a class="side-btn" href=".html">Event</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-peoples.png" alt="">
+                <a class="side-btn" href=".html">Customer Accounnt</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-staff.png" alt="">
+                <a class="side-btn" href=".html">Staff</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-producer.png" alt="">
+                <a class="side-btn" href=".html">Producers</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-order.png" alt="">
+                <a class="side-btn" href=".html">orders</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-chat.png" alt="">
+                <a class="side-btn" href=".html">Zendesk chat</a>
+            </div>
+        </aside>
+        <div class="main">
             <div id="heading">
                 <h1>Files</h1>
                 <button id="add-file-btn">+ Add File</button>
             </div>
-            <div id="main-container">
-                <!-- ----------------------------a----------------------------- -->
+            <div class="main-content">
                 <div class="img-container">
                     <img id="img-a" src="images/bvss.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test()" style=" text-decoration: none;">
@@ -175,22 +172,13 @@
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
-                <!-- --------------------------------------------------------------- -->
             </div>
+
         </div>
     </main>
-    <!-- ---------------------------------------------------------------------- -->
     <footer>
-        <p>All Rights &copy Reserve</p>
+        <p>All Right &copy Reserve</p>
     </footer>
 </body>
-<script>
-    let c_date = new Date();
-    d = c_date.getDate();
-    m = c_date.getMonth() + 01;
-    y = c_date.getFullYear();
-    document.getElementsByClassName("date").innerHTML = d + "/" + m + "/" + y;
-</script>
-<script src="j-script.js"></script>
 
 </html>

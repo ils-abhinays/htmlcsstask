@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.top-content{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.top-content img{
+    margin: 15px;
+    display: flex;
+    position: absolute;
+    right: 15vw;
+}
+#input{
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+
+}
+.top-content p,h1{
+    color: white;
+    padding-left: 20px;
+}
+.top-content img{
+    height: 30px;
+    filter: invert();
+}
+.side-bar img{
+    display: inline-block;
+    width: 20px;
+}
+.side-bar{
+    padding: 15px;
+}
+.side-bar a{
+    text-decoration: none;
+    color: black;
+    width: 20em;
+    text-align: left;
+    font-size: 20px;
+}
+aside{
+    display: inline-block;
+    width: max-content;
+    background-color: white;
+    height: 90vh;
+}
+.reports h1{
+    color: black;
+}
+.reports-box-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.reports-box{
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    margin: 10px;
+}
+.visual-report-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.v-repo2{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+#v-repo1{
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+.v-repo2 p{
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    margin: 10px;  
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+#c-box{
+    display: none;
+}
+#report-btn{
+    border-left: 3px solid rgb(226, 21, 182);
+}
+.side-btn:hover{
+  color: rgb(226, 21, 182);
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+footer p{
+    padding: 5px;
+}
+/* ------------------------------------------------ */
+@media screen and (max-width: 450px){
+    .top-content h1{
+        color: white;
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    .top-content p{
+        color: white;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .top-content img{
+        margin: 15px;
+        display: flex;
+        position: absolute;
+        right: 25vw;
+    }
+
+    #input{
+        width: 80px;
+        margin-top: 15px;
+        display: flex;
+        position: absolute;
+        right: 2px;
+    }
+    #c-box{
+        display: none;
+    }
+    #c-box:checked + aside{
+        display: inline-block;
+    }
+    .toggle{
+        margin: 5px;
+        height: 30px;
+        width: 50px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .toggle label p{
+        margin: 4px;
+        /* padding: 5px; */
+        height: 2px;
+        width: 30px;
+        border: 1px solid black;
+        background-color: black;
+    }
+    aside{
+        display: none;
+        width: 200px;
+        background-color: white;
+        height: 90vh;
+        position:fixed;
+    }
+    footer{
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+    footer p{
+        padding: 5px;
+    }
+}
+/* -------------------tab------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 950px){
+    .top-content h1{
+        color: white;
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    .top-content p{
+        color: white;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .top-content img{
+        margin: 15px;
+        display: flex;
+        position: absolute;
+        right: 25vw;
+    }
+
+    #input{
+        width: 80px;
+        margin-top: 15px;
+        display: flex;
+        position: absolute;
+        right: 2px;
+    }
+    #c-box{
+        display: none;
+    }
+    #c-box:checked + aside{
+        display: inline-block;
+    }
+    .toggle{
+        margin: 5px;
+        height: 30px;
+        width: 50px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .toggle label p{
+        margin: 4px;
+        /* padding: 5px; */
+        height: 2px;
+        width: 30px;
+        border: 1px solid black;
+        background-color: black;
+    }
+    aside{
+        display: none;
+        width: 300px;
+        background-color: white;
+        height: 90vh;
+        position:fixed;
+    }
+
+
+    .reports-box-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .reports-box{
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #v-repo1{
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        height: 180px;
+        width: 330px;
+        text-align: center;
+        margin: 10px;
+    }
+    .v-repo2 p{
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin: 10px;  
+    }
+
+
+    footer{
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    footer p{
+        padding: 5px;
+    }
+}

@@ -5,98 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main page</title>
-    <link rel="stylesheet" href="stylesheets/main-page-style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/report-style.css">
 </head>
 
 <body>
     <header>
-        <span>
-            <h1>SYNAPSE LLC</h1>
-            <p>Powered By Ilead Group</p>
-        </span>
-        <a href="notification.html "><img src="icon-pngs/bell3.png" alt="bell2" id="noti"></a>
-        <input list="profile-data" name="profile-bar" id="profile-bar" style="height: 25px; margin-left: 20px ;">
-        <datalist id="profile-data">
-            <option value="Profile">
-            <option value="Photos">
-            <option value="Setting">
-            <option value="notification">
-            <option value="Log Out">
-        </datalist>
+        <div class="top-content">
+            <div class="top-heading">
+                <h1>Synapse LLC</h1>
+                <p>Powered By Ilead Group</p>
+            </div>
+            <a href="notification.html"><img src="icon-pngs/bell3.png" alt=""></a>
+            <input type="text" id="input">
+        </div>
+        <div class="toggle">
+            <label for="c-box">
+                <p></p>
+                <p></p>
+                <p></p>
+            </label>
+        </div>
     </header>
     <main>
-        <div>
-            <aside>
-                <br>
-                <span style="border-left: 4px solid rgb(226, 21, 182);">
-                    <img src="icon-pngs/homepng.png" alt="" id="home-img" class="side-imgs">
-                    <a class="side-box-btn" href="report.html" style="color: rgb(226, 21, 182);"> Reports</a>
-                </span>
-                <span id="hi">
-                    <img src="icon-pngs/imageicon.png" alt="" id="file-img" class="side-imgs">
-                    <a class="side-box-btn" href="files.html">Files</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-cal.png" alt="" id="event-img" class="side-imgs">
-                    <a class="side-box-btn" href="event.html">Event</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-peoples.png" alt="" id="home-img" class="side-imgs">
-                    <a class="side-box-btn" href="c-account.html">Customer Account</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-staff.png" alt="" id="staff-img" class="side-imgs">
-                    <a class="side-box-btn" href="staff.html">Staff</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-producer.png" alt="" id="producer-img" class="side-imgs">
-                    <a class="side-box-btn" href="producer.html">Producers</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-order.png" alt="" id="orders-img" class="side-imgs">
-                    <a class="side-box-btn" href="orders.html">Orders</a>
-                </span>
-                <span>
-                    <img src="icon-pngs/icon-chat.png" alt="" id="z-chat-img" class="side-imgs">
-                    <a class="side-box-btn" href="z-chat.html">Zendesk Chat</a>
-                </span>
-            </aside>
-        </div>
-        <!-- ---------------------------------------------------------------------- -->
-        <div class="one">
-            <div id="content" class="visuals">
+        
+        <input type="checkbox" name="" id="c-box">
+        <aside>
+            <div class="side-bar" id="report-btn">
+                <img src="icon-pngs/homepng.png" alt="">
+                <a href=".html" style="color: rgb(226, 21, 182);">Reports</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/imageicon.png" alt="">
+                <a class="side-btn" href="files.html">Files</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-cal.png" alt="">
+                <a class="side-btn" href=".html">Event</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-peoples.png" alt="">
+                <a class="side-btn" href=".html">Customer Accounnt</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-staff.png" alt="">
+                <a class="side-btn" href=".html">Staff</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-producer.png" alt="">
+                <a class="side-btn" href=".html">Producers</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-order.png" alt="">
+                <a class="side-btn" href=".html">orders</a>
+            </div>
+            <div class="side-bar">
+                <img src="icon-pngs/icon-chat.png" alt="">
+                <a class="side-btn" href=".html">Zendesk chat</a>
+            </div>
+        </aside>
+        <div class="main-content">
+            <div class="reports">
                 <h1>Reports</h1>
-                <div class="content2">
-                    <span class="box"><p>Total Customers</p></span>
-                    <span class="box"><p>image Downloaded</p></span>
-                    <span class="box"><p>Videos Downloaded</p></span>
-                    <span class="box"><p>Events Created</p></span>
-                    <span class="box"><p>Sales Report Count</p></span>
+                <div class="reports-box-div">
+                    <p class="reports-box">Total customer</p>
+                    <p class="reports-box">Image Download</p>
+                    <p class="reports-box">Videos Download</p>
+                    <p class="reports-box">Event Created</p>
+                    <p class="reports-box">Sales Report Count</p>
                 </div>
             </div>
-            <div id="second-content" class="visuals">
-                <h1>Visual Reports</h1>
-                <div class="content2">
-                    <span id="box1"><p>Top 3 Event Per View</p></span>
-                    <div class="second">
-                        <div class="third">
-                            <span class="box2"><p>All Downloads</p></span>
-                            <span class="box2"><p>image Downloaded</p></span>
-                        </div>
-                        <div class="third">
-                            <span class="box2"><p>Videos Downloaded</p></span>
-                            <span class="box2"><p>Events Created</p></span>
-                        </div>
+            <div class="visual-report">
+                <h1 style="color: black;">Visual Report</h1>
+                <div class="visual-report-div">
+                    <p id="v-repo1">Top 3 event per view</p>
+                    <div class="v-repo2">
+                        <p>all download</p>
+                        <p>image download</p>
+                        <p>video download</p>
+                        <p>event creation</p>
                     </div>
                 </div>
             </div>
         </div>
-                
-        </main>
-        <!-- ------------------------------------------------------------------------- -->
-        <footer>
-        <p>All Rights &copy Reserve</p>
+    </main>
+    <footer>
+        <p>All Right &copy Reserve</p>
     </footer>
 </body>
 
