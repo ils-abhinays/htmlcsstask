@@ -6,48 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/bvss-view-img-style.css">
+    <link rel="stylesheet" href="stylesheets/view-img-style.css">
 </head>
 <link rel="html" href="files.html">
 <!-- <script defer src="j-script.js"></script> -->
+
 <body>
-    <main>
-        <div class="top-content">
-            <h2 id="header"></h2>
-            <a href="files.html"><img src="icon-pngs/cross-x.png" alt=""></a>
-        </div>
-        <div id="img-bvss">
-            <img id="x-img" src="" alt="">
-        </div>
-        <div id="nav-img">
-            <a href="index.html">home ></a>
-            <a href="report.html">report ></a>
-            <a href="files.html">file ></a>
-            <img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon">
-            <img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon">
-        </div>
-        <div id="comment">
-            <h2>Comment</h2>
-            <p>
-                Batman v Superman: Dawn of Justice is a 2016 American superhero film based on the DC Comics characters
-                Batman and Superman. Co-produced by Atlas Entertainment and Cruel and Unusual Films, and distributed by
-                Warner Bros. Pictures, it is a follow-up to Man of Steel (2013) and the second installment in the DC
-                Extended Universe (DCEU).[7] The film was directed by Zack Snyder, written by Chris Terrio and David S.
-                Goyer, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Amy Adams, Jesse
-                Eisenberg, Diane Lane, Laurence Fishburne, Jeremy Irons, Holly Hunter, and Gal Gadot. Batman v Superman:
-                Dawn of Justice is the first live-action film to feature Batman and Superman together, as well as the
-                first live-action cinematic portrayal of Wonder Woman. In the film, criminal mastermind Lex Luthor
-                manipulates Batman into a preemptive battle with Superman, with whom Luthor is obsessed.
-            </p>
-        </div>
-        <div id="footer-main">
-            <h2>Created on: 30/02/2022</h2>
-        </div>
-    </main>
+    <div class="main-content">
+        <main>
+            <div class="top-content">
+                <h2 id="header"></h2>
+                <a href="files.html"><img src="icon-pngs/cross-x.png" alt=""></a>
+            </div>
+            <div id="img-bvss">
+                <img id="x-img" src="" alt="">
+            </div>
+            <div id="nav-img">
+                <a href="index.html">home ></a>
+                <a href="report.html">report ></a>
+                <a href="files.html">file ></a>
+                <img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon">
+                <img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon">
+            </div>
+            <div id="comment">
+                <h2>Comment</h2>
+                <p>
+                    Batman v Superman: Dawn of Justice is a 2016 American superhero film based on the DC Comics
+                    characters
+                    Batman and Superman. Co-produced by Atlas Entertainment and Cruel and Unusual Films, and distributed
+                    by
+                    Warner Bros. Pictures, it is a follow-up to Man of Steel (2013) and the second installment in the DC
+                    Extended Universe (DCEU).[7] The film was directed by Zack Snyder, written by Chris Terrio and David
+                    S.
+                    Goyer, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Amy Adams, Jesse
+                    Eisenberg, Diane Lane, Laurence Fishburne, Jeremy Irons, Holly Hunter, and Gal Gadot. Batman v
+                    Superman:
+                    Dawn of Justice is the first live-action film to feature Batman and Superman together, as well as
+                    the
+                    first live-action cinematic portrayal of Wonder Woman. In the film, criminal mastermind Lex Luthor
+                    manipulates Batman into a preemptive battle with Superman, with whom Luthor is obsessed.
+                </p>
+            </div>
+            <div id="footer-main">
+                <h2>Created on: 30/02/2022</h2>
+            </div>
+        </main>
+    </div>
     <script>
-        document.getElementById("header").innerHTML=localStorage.getItem("val");
-        var ss=localStorage.getItem("val-img");
-        document.getElementById("x-img").src=ss; 
+        document.getElementById("header").innerHTML = localStorage.getItem("val");
+        var ss = localStorage.getItem("val-img");
+        document.getElementById("x-img").src = ss; 
     </script>
 </body>
+
 </html>

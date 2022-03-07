@@ -1,20 +1,23 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: rgb(212, 209, 255);
 }
 header{
     margin-left: 0;
     text-align: center;
-    width: 99vw;
+    width: 100vw;
     height: 10vh;
     background-color: black;
     color: white;
-    line-height: 2px;
+    line-height: 25px;
     padding-top: 2vh;
 }
 #box{
     margin-top: 0px;
-    width: 99vw;
+    width: 100vw;
     height: 2vh;
     background-color: rgb(226, 21, 182);
 }
@@ -28,14 +31,22 @@ main
     width: 30vw;
     height: 45vh;
     margin: auto;
-    /* box-shadow: 4px 4px 5px black,-4px -4px 5px black; */
     box-shadow: 4px 4px 5px gray;
+    /* padding: 20px; */
+    /* line-height: 20px; */
+    /* margin: 10px; */
+}
+body main{
+    margin-top: 20px;
+}
+.inner-element{
+    padding:  10px;
 }
 .idpass{
     border-radius: 10px;
     width: 20em;
     height: 2em;
-    margin: auto;
+    margin: 10px;
 }
 span{
     flex-direction: row;
@@ -72,16 +83,16 @@ footer p{
         margin-right: 4px;
         /* padding: 0px; */
         text-align: center;
-        width: 95vw;
+        width: 100vw;
         height: 10vh;
         background-color: black;
         color: white;
-        line-height: 2px;
+        line-height: 25px;
         padding-top: 2vh;
     }
     #box{
         margin-top: 0px;
-        width: 95vw;
+        width: 100vw;
         height: 2vh;
         background-color: rgb(226, 21, 182);
     }
@@ -101,7 +112,7 @@ footer{
     text-align: center;
     color: white;
     background-color: black;
-    width: 95vw;
+    width: 100vw;
     position: absolute;
     bottom: 0;
     
@@ -115,16 +126,16 @@ footer{
         margin-right: 4px;
         /* padding: 0px; */
         text-align: center;
-        width: 95vw;
+        width: 100vw;
         height: 10vh;
         background-color: black;
         color: white;
-        line-height: 2px;
+        line-height: 25px;
         padding-top: 2vh;
     }
     #box{
         margin-top: 0px;
-        width: 95vw;
+        width: 100vw;
         height: 2vh;
         background-color: rgb(226, 21, 182);
     }
@@ -140,11 +151,17 @@ footer{
     margin: 30px auto;
     box-shadow: 4px 4px 5px gray;
 }
+.inner-element{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: auto;
+}
 footer{
     text-align: center;
     color: white;
     background-color: black;
-    width: 95vw;
+    width: 100vw;
     position: absolute;
     bottom: 0;
     

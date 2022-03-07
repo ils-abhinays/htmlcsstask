@@ -75,7 +75,7 @@
                         <p style="color: rgb(226, 21, 182);" id="heading-a">Batman vs Superman</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
+                    <div class="bottom-align">
                         <p class="date"></p>
                         <a href=""><img id="one-img" src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img id="images" src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
@@ -88,7 +88,7 @@
                         <p id="heading-b" style="color: rgb(226, 21, 182);">Iran Man</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
+                    <div class="bottom-align">
                         <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
@@ -101,7 +101,7 @@
                         <p id="heading-c" style="color: rgb(226, 21, 182);">Joker</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
+                    <div class="bottom-align">
                         <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
@@ -114,7 +114,7 @@
                         <p id="heading-d" style="color: rgb(226, 21, 182);">Nature Waterfall</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
+                    <div class="bottom-align">
                         <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
@@ -127,8 +127,8 @@
                         <p id="heading-e" style="color: rgb(226, 21, 182);">Avengers Team</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
-                        <p id="date"></p>
+                    <div class="bottom-align">
+                        <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
                     </div>
@@ -140,8 +140,8 @@
                         <p id="heading-f" style="color: rgb(226, 21, 182);">Batman </p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
-                        <p id="date"></p>
+                    <div class="bottom-align">
+                        <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
                     </div>
@@ -153,8 +153,8 @@
                         <p id="heading-g" style="color: rgb(226, 21, 182);">Natural View</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
-                        <p id="date"></p>
+                    <div class="bottom-align">
+                        <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
                     </div>
@@ -166,8 +166,8 @@
                         <p id="heading-h" style="color: rgb(226, 21, 182);">Avengers</p>
                     </a>
                     <p>Download Count:10k</p>
-                    <div id="bottom-align">
-                        <p id="date"></p>
+                    <div class="bottom-align">
+                        <p class="date"></p>
                         <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
                         <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
                     </div>
@@ -177,8 +177,17 @@
         </div>
     </main>
     <footer>
-        <p>All Right &copy Reserve</p>
+        <p class="xx">All Right &copy Reserve</p>
     </footer>
 </body>
-
+<script>
+    let dat= new Date();
+    let d=dat.getDate();
+    let m=dat.getMonth()+1;
+    let y=dat.getFullYear();
+    let c=document.getElementsByClassName("date");
+    for(let i=0; i<c.length;i++){
+        c[i].innerHTML= d+"/"+m+"/"+y;
+    }
+</script>
 </html>
