@@ -84,13 +84,13 @@ aside{
     flex-direction: row;
     flex-flow: wrap;
 }
-#v-repo1{
+#piechart{
     box-sizing: border-box;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
-    height: 150px;
-    width: 300px;
+    height: auto;
+    width: auto;
     text-align: center;
     margin: 10px;
 }
@@ -132,6 +132,29 @@ footer{
 footer p{
     padding: 5px;
 }
+/* ------------------------------------------ */
+#piechart
+{
+    height: 500px !important;
+    width: 1000px  !important;
+}
+#linechart{
+    height: 200px ;
+    width: 400px ;
+}
+#linechart2{
+    height: 200px ;
+    width: 400px ;
+}
+#linechart3{
+    height: 200px ;
+    width: 400px ;
+}
+#linechart4{
+    height: 200px ;
+    width: 400px ;
+}
+/* ---------------------------------------------- */
 /* ------------------------------------------------ */
 @media screen and (max-width: 450px){
     .top-content h1{

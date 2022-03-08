@@ -78,12 +78,13 @@
             <div class="visual-report">
                 <h1 style="color: black;">Visual Report</h1>
                 <div class="visual-report-div">
-                    <p id="v-repo1">Top 3 event per view</p>
+                    <canvas role="img" id="piechart"></canvas>
                     <div class="v-repo2">
-                        <p>all download</p>
-                        <p>image download</p>
-                        <p>video download</p>
-                        <p>event creation</p>
+                        <canvas role="img" id="linechart"></canvas>
+                        <canvas role="img" id="linechart2"></canvas>
+                        <canvas role="img" id="linechart3"></canvas>
+                        <canvas role="img" id="linechart4"></canvas>
+                        
                     </div>
                 </div>
             </div>
@@ -93,5 +94,8 @@
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
-
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script src="chart.js"></script>
 </html>
