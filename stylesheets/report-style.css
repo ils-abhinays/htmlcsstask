@@ -72,6 +72,10 @@ aside{
     text-align: center;
     margin: 10px;
 }
+.report-count{
+    padding: 10px;
+    font-size: 25px;
+}
 .visual-report-div{
     width: 100%;
     height: auto;
@@ -133,12 +137,28 @@ footer p{
     padding: 5px;
 }
 /* ------------------------------------------ */
-#piechart
+.linechart{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 0px 5px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+canvas{
+    display: flex;
+    flex-direction: row;
+}
+
+/* #piechart
 {
     height: 500px !important;
     width: 1000px  !important;
-}
-#linechart{
+} */
+/* #linechart{
     height: 200px ;
     width: 400px ;
 }
@@ -153,7 +173,7 @@ footer p{
 #linechart4{
     height: 200px ;
     width: 400px ;
-}
+} */
 /* ---------------------------------------------- */
 /* ------------------------------------------------ */
 @media screen and (max-width: 450px){

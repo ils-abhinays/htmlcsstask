@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        
+
         <input type="checkbox" name="" id="c-box">
         <aside>
             <div class="side-bar" id="report-btn">
@@ -68,23 +68,49 @@
             <div class="reports">
                 <h1>Reports</h1>
                 <div class="reports-box-div">
-                    <p class="reports-box">Total customer</p>
-                    <p class="reports-box">Image Download</p>
-                    <p class="reports-box">Videos Download</p>
-                    <p class="reports-box">Event Created</p>
-                    <p class="reports-box">Sales Report Count</p>
+                    <div class="reports-box">
+                        <p class="reports-heading">Total customer</p>
+                        <p class="report-count">13,000</p>
+                    </div>
+                    <div class="reports-box">
+                        <p class="reports-heading">Videos Download</p>
+                        <p class="report-count">40M</p>
+                    </div>
+                    <div class="reports-box">
+                        <p class="reports-heading">Image Download</p>
+                        <p class="report-count">10M</p>
+                    </div>
+                    <div class="reports-box">
+                        <p class="reports-heading">Event Created</p>
+                        <p class="report-count">1200</p>
+                    </div>
+                    <div class="reports-box">
+                        <p class="reports-heading">Sales Report Count</p>
+                        <p class="report-count">150</p>
+                    </div>
                 </div>
             </div>
             <div class="visual-report">
                 <h1 style="color: black;">Visual Report</h1>
                 <div class="visual-report-div">
-                    <canvas role="img" id="piechart"></canvas>
-                    <div class="v-repo2">
-                        <canvas role="img" id="linechart"></canvas>
-                        <canvas role="img" id="linechart2"></canvas>
-                        <canvas role="img" id="linechart3"></canvas>
-                        <canvas role="img" id="linechart4"></canvas>
-                        
+                    <div class="pie" style="display: block; width: 500px;">
+                        <canvas role="img" id="piechart"></canvas>
+                    </div>
+                    <div class="v-repo2" style="display: block; width: 200px; ">
+                        <div class="linechart">
+                            <h3>All Downloads</h3>
+                            <canvas role="img" id="linechart"></canvas>
+                        </div>
+                        <div class="linechart">
+                            <canvas role="img" id="linechart2"></canvas>
+                        </div>
+                        <div class="linechart">
+                            <canvas role="img" id="linechart3"></canvas>
+                        </div>
+                        <div class="linechart">
+                            <canvas role="img" id="linechart4"></canvas>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,8 +120,8 @@
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 <script src="chart.js"></script>
+
 </html>
