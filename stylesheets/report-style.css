@@ -17,13 +17,53 @@ body{
     position: absolute;
     right: 15vw;
 }
-#input{
+/* -----------profile toggle---------------- */
+#profile-content{
     margin: 20px;
     display: flex;
     position: absolute;
-    right: 20px;
-
+    right: 50px;
+    top: -3px;
 }
+#profile-pic{
+    height: 40px;
+    border-radius: 50%;
+    filter: none;
+    display: flex;
+    position: absolute;
+    right: 35px;
+    top: -13px;
+}
+#profile-toggle{
+    display: none;
+}
+.profile-toggle-sidebar{
+
+    display: none;
+}
+#profile-toggle:checked + .profile-toggle-sidebar
+{
+    display: flex;
+}
+.profile-toggle-sidebar{
+    flex-direction: column;
+    position:fixed;
+    top: 80px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+.profile-toggle-sidebar-content{
+    text-decoration: none;
+    color: black;
+    padding: 15px 40px 15px 40px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+.profile-toggle-sidebar-content:hover{
+    color: rgb(226, 21, 182);
+}
+/* -+------------------------------------------ */
 .top-content p,h1{
     color: white;
     padding-left: 20px;
@@ -76,38 +116,6 @@ aside{
     padding: 10px;
     font-size: 25px;
 }
-.visual-report-div{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-}
-.v-repo2{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-}
-#piechart{
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
-    height: auto;
-    width: auto;
-    text-align: center;
-    margin: 10px;
-}
-.v-repo2 p{
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
-    height: 80px;
-    width: 160px;
-    text-align: center;
-    margin: 10px;  
-}
 main{
     display: flex;
     flex-direction: row;
@@ -123,7 +131,7 @@ main{
     border-left: 3px solid rgb(226, 21, 182);
 }
 .side-btn:hover{
-  color: rgb(226, 21, 182);
+    color: rgb(226, 21, 182);
 }
 footer{
     text-align: center;
@@ -136,44 +144,101 @@ footer{
 footer p{
     padding: 5px;
 }
-/* ------------------------------------------ */
-.linechart{
+/* -----------------visual data------------------------- */
+#piechart{
+    box-sizing: border-box;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+}
+.pie{
+     display: flex;
+     width: 900px;
+}
+.visual-report-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: wrap; */
+}
+.v-repo2{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+}
+.linechart{
+    width: 300px;
+    background-color: white;
     margin: 0px 5px 10px 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
 }
-canvas{
+.linechart h3{
+    padding: 15px;
+}
+/* ===============three dot===================== */
+#three-dot-1{
+    display: none;
+}
+.three-dot{ 
+    display: flex;
+    flex-direction: row; 
+    /* border: 2px solid gray; */
+    margin:auto;
+   margin-right: 20px;
+}
+.top-content-of-chart{
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    /* border: 2px solid gray; */
+
+}
+.three-dot p{
+    background-color: gray;
+    border-radius: 50%;
+    margin: 2px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid gray;
+}
+#three-dot-1 :checked + .three-dot-list{
+    display: flex;
+}
+.three-dot-list{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position:fixed;
+    box-shadow: 2px 2px 7px gray;
+}
+.three-dot-list a{
+    width: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.three-dot-content{
+    border-bottom: 1px solid black; 
 }
 
-/* #piechart
-{
-    height: 500px !important;
-    width: 1000px  !important;
-} */
-/* #linechart{
-    height: 200px ;
-    width: 400px ;
+/* ============================================= */
+canvas{
+    display: flex;
 }
-#linechart2{
-    height: 200px ;
-    width: 400px ;
+.v-repo2 canvas{
+    display: flex; 
+    height: fit-content;
+    flex-direction: row;
+    flex-flow: wrap;
 }
-#linechart3{
-    height: 200px ;
-    width: 400px ;
-}
-#linechart4{
-    height: 200px ;
-    width: 400px ;
-} */
 /* ---------------------------------------------- */
 /* ------------------------------------------------ */
 @media screen and (max-width: 450px){
@@ -194,19 +259,12 @@ canvas{
         position: absolute;
         right: 25vw;
     }
-
-    #input{
-        width: 80px;
-        margin-top: 15px;
-        display: flex;
-        position: absolute;
-        right: 2px;
-    }
     #c-box{
         display: none;
     }
     #c-box:checked + aside{
         display: inline-block;
+        /* background-color: aqua; */
     }
     .toggle{
         margin: 5px;
@@ -233,6 +291,13 @@ canvas{
         height: 90vh;
         position:fixed;
     }
+    #profile-content{
+        margin: 20px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: -3px;
+    }
     footer{
         text-align: center;
         color: white;
@@ -244,6 +309,59 @@ canvas{
     footer p{
         padding: 5px;
     }
+
+    /* ---------------visual---------------- */
+    .visual-report-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+     }
+    #piechart{
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin: 10px;
+    }
+    .pie{
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+
+   }
+    .v-repo2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .linechart{
+        /* margin: auto; */
+        width: 300px;
+        background-color: white;
+        /* margin: 0px 5px 10px 30px; */
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        margin: 10px auto 10px auto;
+    }
+    .linechart h3{
+        padding: 15px;
+    }
+    canvas{
+        display: flex;
+    }
+    .v-repo2 canvas{
+        display: flex; 
+        flex-flow: wrap;
+    }
+    /* ---------------------------------------------- */
+    
 }
 /* -------------------tab------------------- */
 
@@ -323,38 +441,65 @@ canvas{
         text-align: center;
         margin: 10px;
     }
-
-    #v-repo1{
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px gray;
-        height: 180px;
-        width: 330px;
-        text-align: center;
-        margin: 10px;
-    }
-    .v-repo2 p{
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px gray;
-        height: 100px;
-        width: 200px;
-        text-align: center;
-        margin: 10px;  
-    }
-
-
     footer{
         text-align: center;
         color: white;
         background-color: black;
         width: 100%;
-        position: absolute;
+        position: relative;
         bottom: 0;
     }
     footer p{
         padding: 5px;
     }
+     /* ---------------visual---------------- */
+     .visual-report-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+     }
+    #piechart{
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin: 10px;
+    }
+    .pie{
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+
+   }
+    .v-repo2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .linechart{ 
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        margin: 10px auto 10px auto;
+    }
+    .linechart h3{
+        padding: 15px;
+    }
+    canvas{
+        display: flex;
+    }
+    .v-repo2 canvas{
+        display: flex; 
+        flex-flow: wrap;
+    }
+    /* ---------------------------------------------- */
+
 }

@@ -17,7 +17,23 @@
                 <p>Powered By Ilead Group</p>
             </div>
             <a href="notification.html"><img src="icon-pngs/bell3.png" alt=""></a>
-            <input type="text" id="input">
+            <label for="profile-toggle" id="profile-content">
+                <div class="p-content">
+                    <img id="profile-pic" src="images/profile-pic.jpg" alt="">
+                </div>
+                <div class="p-content2">
+                    <p>Devil</p>
+                    <p style="font-weight: bold; font-size: 13px;">Admin</p>
+                </div>
+            </label>
+            <input type="checkbox" id="profile-toggle">
+            <div class="profile-toggle-sidebar">
+                <a href="your-profile.html" class="profile-toggle-sidebar-content">Your Profile</a>
+                <a href="" class="profile-toggle-sidebar-content">Settings</a>
+                <a href="" class="profile-toggle-sidebar-content">Update</a>
+                <a href="" class="profile-toggle-sidebar-content">Notification</a>
+                <a href="" class="profile-toggle-sidebar-content">Logout</a>
+            </div>
         </div>
         <div class="toggle">
             <label for="c-box">
@@ -93,21 +109,40 @@
             <div class="visual-report">
                 <h1 style="color: black;">Visual Report</h1>
                 <div class="visual-report-div">
-                    <div class="pie" style="display: block; width: 500px;">
+                    <div class="pie">
                         <canvas role="img" id="piechart"></canvas>
                     </div>
-                    <div class="v-repo2" style="display: block; width: 200px; ">
+                    <div class="v-repo2">
                         <div class="linechart">
-                            <h3>All Downloads</h3>
+                            <div class="top-content-of-chart">
+                                <h3>All Downloads</h3>
+                                <label for="three-dot-1" class="three-dot">
+                                        <!-- <div class="three-dot"> -->
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        <!-- </div> -->
+                                </label>
+                                <input type="checkbox" id="three-dot-1">
+                                <div class="three-dot-list">
+                                    <a src="" class="three-dot-content"> View Details</a>
+                                    <a src="" class="three-dot-content"> Analytics</a>
+                                    <a src="" class="three-dot-content"> Edit</a>
+                                    <a src="" class="three-dot-content"> Report</a>
+                                </div>
+                            </div>
                             <canvas role="img" id="linechart"></canvas>
                         </div>
                         <div class="linechart">
+                            <h3>Image Downloads</h3>
                             <canvas role="img" id="linechart2"></canvas>
                         </div>
                         <div class="linechart">
+                            <h3>Video Downloads</h3>
                             <canvas role="img" id="linechart3"></canvas>
                         </div>
                         <div class="linechart">
+                            <h3>Event Creation</h3>
                             <canvas role="img" id="linechart4"></canvas>
 
                         </div>

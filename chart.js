@@ -17,11 +17,15 @@ new Chart(crt, {
     },
     options: 
     {
+        // layout:{
+        //     padding: 0,
+        // },
+        // responsive:false,
         title:
         {
             display: true,
             text: "Top 3 events per View",
-            fontSize: 25
+            fontSize: 15,
         },
         plugins: 
         {
@@ -39,7 +43,7 @@ new Chart(crt, {
             {
                 display: true,
                 position: 'bottom',
-                align: 'end',
+                align: 'center',
                 labels: 
                 {
                     fontSize: 10,
