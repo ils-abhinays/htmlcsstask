@@ -88,10 +88,13 @@ body{
 }
 aside{
     display: inline-block;
-    width: max-content;
+    width:28vw;
     background-color: white;
     height: 90vh;
+    box-shadow: 0px 5px 5px gray;
+
 }
+
 .reports h1{
     color: black;
 }
@@ -164,7 +167,6 @@ footer p{
     height: auto;
     display: flex;
     flex-direction: row;
-    /* flex-flow: wrap; */
 }
 .v-repo2{
     width: 100%;
@@ -187,19 +189,25 @@ footer p{
 #three-dot-1{
     display: none;
 }
+#three-dot-2{
+    display: none;
+}
+#three-dot-3{
+    display: none;
+}
+#three-dot-4{
+    display: none;
+}
 .three-dot{ 
     display: flex;
     flex-direction: row; 
-    /* border: 2px solid gray; */
     margin:auto;
-   margin-right: 20px;
+    margin-right: 20px;
 }
 .top-content-of-chart{
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    /* border: 2px solid gray; */
-
 }
 .three-dot p{
     background-color: gray;
@@ -209,24 +217,41 @@ footer p{
     height: 4px;
     border: 2px solid gray;
 }
-#three-dot-1 :checked + .three-dot-list{
+#three-dot-1:checked + .three-dot-list{
+    display: flex;
+}
+#three-dot-2:checked + .three-dot-list{
+    display: flex;
+}
+#three-dot-3:checked + .three-dot-list{
+    display: flex;
+}
+#three-dot-4:checked + .three-dot-list{
     display: flex;
 }
 .three-dot-list{
     display: none;
     flex-direction: column;
+    float: right;
+    margin-left: 100px;
     background-color: white;
-    position:fixed;
+    position:absolute;
     box-shadow: 2px 2px 7px gray;
+    z-index: 10;
 }
 .three-dot-list a{
-    width: 100px;
-    padding: 15px;
+    width: 90px;
+    padding: 15px 15px 16px 15px;
     display: flex;
     justify-content: center;
 }
 .three-dot-content{
-    border-bottom: 1px solid black; 
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black; 
+}
+.three-dot-content:hover{
+    color: rgb(226, 21, 182);
 }
 
 /* ============================================= */
