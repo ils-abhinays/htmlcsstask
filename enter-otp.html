@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP Section</title>
     <link rel="stylesheet" href="stylesheets/enter-otp-style.css">
+    <link rel="stylesheet" href="stylesheets/template-initial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-       <h1>SYNAPSE LLC</h1>
-       <p>Powered By Ilead Group</p>
+        <img id="uep" src="images/uep.png" alt="">
+       
     </header>
     <p id="box">   </p>
     <main>
-       <h2>PLEASE ENTER OTP</h2>
-       <p>Please Enter One Time Password We Sent To Your Email example@mail.com</p>
-       <a href="forgot-pass.html"  class="change-email">Change</a>
-       <input id="email" class="idpass" type="email" placeholder="OTP">
-       <button id="next-btn">Next</button>
+       <h2 id="top-heading">Please Enter OTP</h2>
+       <p style="font-size: 13px;" id="txt2">Please Enter One Time Password We Sent To Your Email example@mail.com</p>
+       <a href="forgot-pass.html" class="change-email">Change</a>
+       <div class="otp-container">
+           <input class="otp" type="number" placeholder="">
+           <input class="otp" type="number" placeholder="">
+           <input class="otp" type="number" placeholder="">
+           <input class="otp" type="number" placeholder="">
+        </div>
+        <div class="cont">
+            <button id="next-btn">NEXT</button>
+        </div>
        <span>
            <a href="forgot-pass.html"id="go-back" class="change-email">Go Back</a>
            <a href="" class="change-email">Re-Send OTP</a>

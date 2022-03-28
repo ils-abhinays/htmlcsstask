@@ -7,27 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
     <link rel="stylesheet" href="stylesheets/login-style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <body>
     <header>
-        <h1>SYNAPSE LLC</h1>
-        <p>Powered By Ilead Group</p>
+        <img id="uep" src="images/uep.png" alt="">
     </header>
     <p id="box"> </p>
-    <main>
-        <h2 class="inner-element">Login</h2>
-        <p class="inner-element">Please enter your email id and password</p>
-        <form action="" class="inner-element">
-            <input id="email" class="idpass" type="email" placeholder="email">
-            <input id="password" class="idpass" type="password" placeholder="password">
-        </form>
-        <span >
-            <a href="forgot-pass.html" id="forgot-pass">Forgot Password?</a>
-            <input type="checkbox">Remeber me
-        </span>
-        <a class="inner-element" href="report.html"><button id="login-btn">LOGIN</button></a>
-    </main>
+    <div class="container1">
+        <main>
+            <h2 class="inner-element" id="login-label">Login</h2>
+            <p class="inner-element">Please enter your email id and password</p>
+            <form action="" class="inner-element">
+                <input id="email" class="idpass" type="email" placeholder="Email">
+                <input id="password" class="idpass" type="password" placeholder="Password">
+            </form>
+            <span >
+                <a href="forgot-pass.html" id="forgot-pass">Forgot Password?</a>
+                <input type="checkbox"> <label for="" id="remember-me">Remember me</label>
+            </span>
+            <a class="inner-element" href="report.html"><button id="login-btn">LOGIN</button></a>
+        </main>
+    </div>
     <footer>
         <p>All Right &copy Reserve</p>
     </footer>

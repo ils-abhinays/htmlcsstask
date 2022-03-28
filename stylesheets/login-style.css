@@ -1,25 +1,32 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+}
+:root{
+    --main-color:#FE077C;
 }
 body{
-    background-color: rgb(212, 209, 255);
+    background-color: #F3F4F9;
 }
 header{
     margin-left: 0;
     text-align: center;
     width: 100vw;
     height: 10vh;
-    background-color: black;
+    background: linear-gradient(#211F1F,#3B3939);
     color: white;
     line-height: 25px;
     padding-top: 2vh;
+}
+#uep{
+    height: 50px;
 }
 #box{
     margin-top: 0px;
     width: 100vw;
     height: 2vh;
-    background-color: rgb(226, 21, 182);
+    background-color: var(--main-color);
 }
 main
 { 
@@ -29,42 +36,58 @@ main
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 45vh;
-    margin: auto;
-    box-shadow: 4px 4px 5px gray;
-    /* padding: 20px; */
-    /* line-height: 20px; */
-    /* margin: 10px; */
+    height: fit-content;
+    margin: 400px auto 0 auto;
+    /* margin-top: 300px; */
+    box-shadow: 1px 1px 4px gray;
+    line-height: 30px;
+}
+.idpass::placeholder{
+    padding-left: 20px;
+}
+.container1{
+    margin-top: 70px;
 }
 body main{
     margin-top: 20px;
 }
 .inner-element{
-    padding:  10px;
+    padding: 5px;
+}
+#login-label{
+    padding-top: 50px;
 }
 .idpass{
-    border-radius: 10px;
+    border: 1px solid #7D86A9;
+    border-radius: 50px;
     width: 20em;
     height: 2em;
     margin: 10px;
+    padding: 4px;
+    /* padding-left: 10px; */
+}
+#remember-me{
+   color: #7D86A9;
+   font-size: 14px;
 }
 span{
     flex-direction: row;
 }
 #forgot-pass{
+    font-size: 14px;
     text-decoration: none;
-    color: rgb(145, 145, 145);
+    color: #7D86A9;
     padding-right: 35px;
 }
 #login-btn{
     width: 20em;
     height: 2.5em;
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
-    background-color: rgb(226, 21, 182);
+    background-color: var(--main-color);
     margin: auto;
-    margin-bottom: 20px;
-    
+    margin-bottom: 50px;
+    border: none;
 }
 footer{
     text-align: center;

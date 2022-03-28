@@ -2,25 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(212, 209, 255);
-}
-header{
-    margin-left: 0;
-    text-align: center;
-    width: 100vw;
-    height: 10vh;
-    background-color: black;
-    color: white;
-    line-height: 25 px;
-    padding-top: 2vh;
-}
-#box{
-    margin-top: 0px;
-    width: 100vw;
-    height: 2vh;
-    background-color: rgb(226, 21, 182);
-}
 main
 { 
     background-color: white;
@@ -29,14 +10,19 @@ main
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height:max-content;
-    margin: auto;
-
-    /* box-shadow: 4px 4px 5px black,-4px -4px 5px black; */
-    box-shadow: 4px 4px 5px gray;
+    height: fit-content;
+    margin: 40px auto 0 auto;
+    box-shadow: 1px 1px 4px gray;
+    line-height: 30px;
+}
+.idpass::placeholder{
+    padding-left: 20px;
 }
 .inner-content{
-    padding: 10px;
+    padding: 5px;
+}
+#signup-label{
+    padding-top: 50px;
 }
 main form input{
    margin: 208px;
@@ -45,36 +31,29 @@ main form input{
     margin-top: 10px;
 }
 .idpass{
-    border-radius: 10px;
-    width: 18em;
+    border: 1px solid #7D86A9;
+    border-radius: 50px;
+    width: 20em;
     height: 2em;
-    margin: 5px;
+    margin: 10px;
+    padding: 4px;
+    /* padding-left: 10px; */
 }
 
 #help{
+    padding-bottom: 10px;
     text-decoration: none;
     color: rgb(145, 145, 145);
-    /* padding-right: 35px; */
-    /* height: 10px; */
 }
 #login-btn{
-    width: 19em;
-    /* height: 2.5em; */
-    border-radius: 10px;
+    width: 20em;
+    height: 2.5em;
+    border-radius: 50px;
     color: white;
-    background-color: rgb(226, 21, 182);
-    margin: 10px auto 10px auto; 
-}
-footer{
-    text-align: center;
-    color: white;
-    background-color: black;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-footer p{
-    padding: 5px;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-bottom: 50px;
+    border: none;
 }
 @media screen and (max-width: 450px) {
 

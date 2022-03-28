@@ -2,77 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: aliceblue;
-}
-.top-content{
-    /* width: 98vw; */
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-.top-content img{
-    margin: 15px;
-    display: flex;
-    position: absolute;
-    right: 15vw;
-}
-/* ----------------------profile-toggle----------------------------- */
-#profile-content{
-    margin: 20px;
-    display: flex;
-    position: absolute;
-    right: 50px;
-    top: -3px;
-}
-#profile-pic{
-    height: 40px;
-    border-radius: 50%;
-    filter: none;
-    display: flex;
-    position: absolute;
-    right: 35px;
-    top: -13px;
-}
-#profile-toggle{
-    display: none;
-}
-.profile-toggle-sidebar{
-z-index: 20;
-    display: none;
-}
-#profile-toggle:checked + .profile-toggle-sidebar
-{
-    display: flex;
-}
-.profile-toggle-sidebar{
-    flex-direction: column;
-    position:fixed;
-    top: 80px;
-    right: 20px;
-    background-color: white;
-    box-shadow: 2px 2px 5px gray;
-}
-.profile-toggle-sidebar-content{
-    text-decoration: none;
-    color: black;
-    padding: 15px 40px 15px 40px;
-    font-size: 20px;
-    border-bottom: 1px solid black;
-}
-.profile-toggle-sidebar-content:hover{
-    color: rgb(226, 21, 182);
-}
-/* ------------------------------------------------------------- */
-.top-content p,h1{
-    color: white;
-    padding-left: 20px;
-}
-.top-content img{
-    height: 30px;
-    filter: invert();
-}
+
 .side-bar img{
     display: inline-block;
     width: 20px;
@@ -146,10 +76,11 @@ main{
 #add-file-btn{
     color: white;
     font-weight: bold;
-    background-color: rgb(226, 21, 182);
-    border-radius: 10px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    border: none;
     height: 3em;
-    width: 8em;
+    width: 10em;
     position:absolute;
     right: 3vw;
     margin: 1vh;
@@ -202,26 +133,16 @@ main{
     flex-flow: wrap;
 }
 #file-btn{
-    border-left: 3px solid rgb(226, 21, 182);
+    border-left: 3px solid var(--main-color);
 }
 .side-btn:hover{
-    color: rgb(226, 21, 182);
+    color: var(--main-color);
   }
   .main-img{
       box-sizing: border-box;
       border-radius: 10px 10px 0px 0px;
   }
-footer{
-    text-align: center;
-    color: white;
-    background-color: black;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-footer p{
-    padding: 5px;
-}
+
 /* ------------------------------------------------ */
 @media screen and (max-width: 450px){
     #add-file-btn{

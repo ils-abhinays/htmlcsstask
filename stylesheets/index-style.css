@@ -2,31 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(212, 209, 255);
-}
-header{
-    margin-left: 0;
-    text-align: center;
-    width: 100vw;
-    height: 12vh;
-    background-color: black;
-    color: white;
-    line-height: 2px;
-    /* padding:px; */
-}
-header h1{
-padding: 24px;  
-}
-header p{
-    padding: 10px;  
-    }
-#box{
-    margin-top: 0px;
-    width: 100vw;
-    height: 2vh;
-    background-color: rgb(226, 21, 182);
-}
 main
 { 
     background-color: white;
@@ -35,39 +10,34 @@ main
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 30vh;
-    margin: auto;
-    /* box-shadow: 4px 4px 5px black,-4px -4px 5px black; */
-    box-shadow: 4px 4px 5px gray;
+    height: fit-content;
+    margin: 300px auto 0 auto;
+    box-shadow: 1px 1px 4px gray;
+    line-height: 10px;
+}
+.log-sign-btn{
+    padding-bottom: 30px;
+}
+
+.container1{
+    margin-top: 50px;
 }
 body main{
     margin-top: 20px;
 }
-body main h2{
-    padding-top: 20px;
-}
-main a{
-    margin-top: 15px;
+#top-heading{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .l-s{
     width: 20em;
     height: 2.5em;
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
-    background-color: rgb(226, 21, 182);
+    background-color: var(--main-color);
     margin: auto;
-    margin-top: 10px; 
-}
-footer{
-    text-align: center;
-    color: white;
-    background-color: black;
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-}
-footer p{
-    padding: 5px;
+    margin: 15px;
+    border: none; 
 }
 @media screen and (max-width: 450px) {
 

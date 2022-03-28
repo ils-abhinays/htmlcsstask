@@ -1,22 +1,4 @@
-body{
-    background-color: rgb(212, 209, 255);
-}
-header{
-    margin-left: 0;
-    text-align: center;
-    width: 99vw;
-    height: 10vh;
-    background-color: black;
-    color: white;
-    line-height: 2px;
-    padding-top: 2vh;
-}
-#box{
-    margin-top: 0px;
-    width: 99vw;
-    height: 2vh;
-    background-color: rgb(226, 21, 182);
-}
+
 main
 { 
     background-color: white;
@@ -25,39 +7,36 @@ main
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 40vh;
-    margin: auto;
-    /* box-shadow: 4px 4px 5px black,-4px -4px 5px black; */
-    box-shadow: 4px 4px 5px gray;
+    height: fit-content;
+    margin: 60px auto 0 auto;
+    box-shadow: 1px 1px 4px gray;
+    line-height: 40px;
+}
+.password::placeholder{
+    padding-left: 20px;
+    color: #7D86A9;
 }
 .password{
-    border-radius: 10px;
+    border: 1px solid #7D86A9;
+    border-radius: 50px;
     width: 20em;
     height: 2em;
+    margin: 10px;
+    padding: 4px;
+}
+.input-and-btn{
     margin: auto;
 }
-
 #submit-btn{
-    width: 20em;
-    height: 2.5em;
-    border-radius: 10px;
-    color: white;
-    background-color: rgb(226, 21, 182);
     margin: auto;
-    margin-top: 0px;
-    
-}
-footer{
-    text-align: center;
+    width: 21em;
+    height: 2.9em;
+    border-radius: 50px;
     color: white;
-    background-color: black;
-    width: 100%;
-     position: relative;
-     background-position: bottom;
-     top: 35vh;
-}
-footer p{
-    padding: 5px;
+    background-color: var(--main-color);
+    margin: 15px;
+    border: none; 
+    margin-bottom: 50px;   
 }
 @media screen and (max-width: 400px) {
 
