@@ -19,7 +19,7 @@
     color: #F3F4F9;
 }
 .top-navigation-div{
-    margin-left: 12px;
+    margin-left: 20px;
 }
 .top-navigation-div a{
     text-decoration: none;
@@ -98,7 +98,6 @@ main{
     
 }
 .main-img{
-    margin-left: 4px;
     height: 10em;
     width: 18em;
     display: flex;
@@ -138,10 +137,16 @@ padding: 0 0 10px 20px;
 }
 .bottom-align img{
     display: flex;
+    /* border: 1px solid red; */
+    padding: 5px;
 
 }
-.edit-delete-icon{
-    right: 0;
+.edit-delete-div{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* border: 1px solid red; */
 }
 .main-content{
     margin: 10px;
@@ -157,8 +162,8 @@ padding: 0 0 10px 20px;
 }
 
   .main-img{
-      box-sizing: border-box;
-      border-radius: 10px 10px 0px 0px;
+    box-sizing:content-box;
+    border-radius: 5px 5px 0px 0px;
   }
 
 /* ------------------------------------------------ */

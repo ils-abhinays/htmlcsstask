@@ -16,7 +16,9 @@
         <main>
             <div class="top-content">
                 <h2 id="header"></h2>
-                <a href="files.html"><img src="icon-pngs/cross-x.png" alt=""></a>
+                <!-- <a href="files.html"> -->
+                    <img id="cross" src="icon-pngs/cross-x.png" alt="">
+                <!-- </a> -->
             </div>
             <div id="img-bvss">
                 <img id="x-img" src="" alt="">
@@ -36,15 +38,7 @@
                     Batman and Superman. Co-produced by Atlas Entertainment and Cruel and Unusual Films, and distributed
                     by
                     Warner Bros. Pictures, it is a follow-up to Man of Steel (2013) and the second installment in the DC
-                    Extended Universe (DCEU).[7] The film was directed by Zack Snyder, written by Chris Terrio and David
-                    S.
-                    Goyer, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Amy Adams, Jesse
-                    Eisenberg, Diane Lane, Laurence Fishburne, Jeremy Irons, Holly Hunter, and Gal Gadot. Batman v
-                    Superman:
-                    Dawn of Justice is the first live-action film to feature Batman and Superman together, as well as
-                    the
-                    first live-action cinematic portrayal of Wonder Woman. In the film, criminal mastermind Lex Luthor
-                    manipulates Batman into a preemptive battle with Superman, with whom Luthor is obsessed.
+                    Extended Universe (DCEU).[7] The film was directed by Zack Snyder, written by Chris Terrio and David.
                 </p>
             </div>
             <div id="footer-main">
@@ -56,6 +50,11 @@
         document.getElementById("header").innerHTML = localStorage.getItem("val");
         var ss = localStorage.getItem("val-img");
         document.getElementById("x-img").src = ss; 
+
+        let crossjs=document.getElementById("cross");
+        crossjs.addEventListener('click', function(){
+            window.close();
+        });
     </script>
 </body>
 

@@ -11,7 +11,9 @@ main{
     margin: auto;
     width: 35vw;
 }
-
+.main-content{
+    margin: 40px;
+}
 .top-content{
     padding-top: 10px;
 }
@@ -53,7 +55,7 @@ main{
         background-color: white;
         border-radius: 10px;
         padding: 0px 15px;
-        margin: auto;
+        margin: auto ;
         width: 95vw;
       
     }

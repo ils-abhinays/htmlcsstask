@@ -19,7 +19,7 @@ aside{
     display: inline-block;
     width: 350px;
     background-color: white;
-    height: 90vh;
+    height: 100vh;
     box-shadow: 0px 5px 5px gray;
     /* border: 10px solid red; */
 }

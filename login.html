@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="stylesheets/login-style.css">
     <link rel="stylesheet" href="stylesheets/template-initial.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <body>
     <header>
@@ -21,20 +21,65 @@
         <main>
             <h2 class="inner-element" id="login-label">Login</h2>
             <p class="inner-element" id="text2">Please enter your email id and password</p>
-            <form action="" class="inner-element">
+            <form action="" class="inner-element" id="form">
                 <input id="email" class="idpass" type="email" placeholder="Email">
                 <input id="password" class="idpass" type="password" placeholder="Password">
+                <br>
+                <div>
+                    <a href="forgot-pass.html" id="forgot-pass">Forgot Password?</a>
+                    <input type="checkbox"> <label for="" id="remember-me">Remember me</label>
+                </div>
+                <br>
+                <a class="inner-elemet"><button type="submit" id="login-btn">LOGIN</button></a>
             </form>
-            <span >
-                <a href="forgot-pass.html" id="forgot-pass">Forgot Password?</a>
-                <input type="checkbox"> <label for="" id="remember-me">Remember me</label>
-            </span>
-            <a class="inner-element" href="report.html"><button id="login-btn">LOGIN</button></a>
+            <div id="e-msg" class="error-box"></div>
+            <div id="p-msg" class="error-box"></div>
         </main>
     </div>
     <footer>
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
+<script>
+    // window.addEventListener('click', reload());
+    let pass = document.getElementById('password');
+    let form = document.getElementById('form');
+    let email = document.getElementById('email');
+    var e_msg = document.getElementById("e-msg");
+    var p_msg = document.getElementById("p-msg");
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    form.addEventListener('submit', (e) => {
+
+        let msge = []
+        let msge2 = []
+        if(email.value == ''){
+            msge.push("email cannot be empty !");
+        }
+        if(pass.value == ''){
+            msge2.push("password cannot be empty !");
+        }
+        if (email.value.match(mailformat)){
+            msge.push("valid");
+        }
+        else if(email.value != ''){
+            msge.push("invalid email");
+        }
+       if ((pass.value.length <= 7 && pass.value.length!=0) || pass.value.length >= 9) {
+                msge2.push("Password should be 8 charecters");
+            }
+            if (pass.value.length==8) {
+                msge2.push("valid");
+            }
+        if (msge.length > 0) {
+            e.preventDefault()
+            e_msg.innerText = msge.join(', ')
+        }
+        if (msge.length > 0) {
+            e.preventDefault()
+            p_msg.innerText = msge2.join(', ')
+        }
+    })
+
+</script>
 
 </html>
