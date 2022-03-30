@@ -3,31 +3,6 @@
     padding: 0;
     font-family: Roboto;
 }
-:root{
-    --main-color:#FE077C;
-}
-body{
-    background-color: #F3F4F9;
-}
-header{
-    margin-left: 0;
-    text-align: center;
-    width: 100vw;
-    height: 10vh;
-    background: linear-gradient(#211F1F,#3B3939);
-    color: white;
-    line-height: 25px;
-    padding-top: 2vh;
-}
-#uep{
-    height: 50px;
-}
-#box{
-    margin-top: 0px;
-    width: 100vw;
-    height: 2vh;
-    background-color: var(--main-color);
-}
 main
 { 
     background-color: white;
@@ -35,11 +10,11 @@ main
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 25vw;
     height: fit-content;
     margin: 400px auto 0 auto;
     /* margin-top: 300px; */
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 1px 1px 4px #7D86A9;
     line-height: 30px;
 }
 .idpass::placeholder{
@@ -56,6 +31,11 @@ body main{
 }
 #login-label{
     padding-top: 50px;
+    font-weight: bolder;
+}
+#text2
+{
+    font: normal normal normal 14px Roboto;
 }
 .idpass{
     border: 1px solid #7D86A9;
@@ -68,16 +48,16 @@ body main{
 }
 #remember-me{
    color: #7D86A9;
-   font-size: 14px;
+   font-size: 11px;
 }
 span{
     flex-direction: row;
 }
 #forgot-pass{
-    font-size: 14px;
+    font-size: 11px;
     text-decoration: none;
     color: #7D86A9;
-    padding-right: 35px;
+    padding-right: 70px;
 }
 #login-btn{
     width: 20em;

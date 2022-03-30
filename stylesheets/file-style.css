@@ -3,37 +3,38 @@
     padding: 0;
 }
 
-.side-bar img{
-    display: inline-block;
-    width: 20px;
+.main #heading h1{
+    color: black;
+    margin: 20px;
+    font-size: 32px;
 }
-.side-bar{
-    padding: 15px;
+.top-heading-and-nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
-.side-bar a{
+.break-line{
+    margin: 0 20px;
+    margin-right: 80px;
+    color: #F3F4F9;
+}
+.top-navigation-div{
+    margin-left: 12px;
+}
+.top-navigation-div a{
     text-decoration: none;
     color: black;
-    width: 20em;
-    text-align: left;
-    font-size: 20px;
+    font-size: 12px;
 }
-aside{
-    display: inline-block;
-    width: 28vw;
-    background-color: white;
-    height: 90vh;
-    box-shadow: 0px 5px 5px gray;
-}
-#heading h1{
-    color: black;
+.nav-arrow{
+    padding-left: 5px;
+    font-size: 13px;
 }
 main{
     display: flex;
     flex-direction: row;
 }
-.visuals h1{
-    margin-left: 5px;
-}
+
 .content2{
     display: flex;
     flex-direction: row;   
@@ -49,8 +50,6 @@ main{
     text-align: center;
     
 }
-
-
 .box2 p{
     margin-left: 5em;
     width: 10em;
@@ -82,8 +81,13 @@ main{
     height: 3em;
     width: 10em;
     position:absolute;
-    right: 3vw;
-    margin: 1vh;
+    right: 75px;
+    margin: 25px;
+    /* border: 1px solid red; */
+}
+.date{
+    color: #AAAAAA;
+    margin: 10px 20px;
 }
 #heading{
     display: flex;
@@ -104,13 +108,26 @@ main{
 .img-container{
     margin: 10px 0px 10px 10px;
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
 }
-.img-container p,a{
+.img-link-click{
+padding: 0 0 10px 20px;
+}
+.download-count-word{
+    padding: 0 15px;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.img-container a{
     padding:3px 0px 3px 4px;
     margin-left: 5px;
     margin-top: 0px;
+    font-weight: 100;
+}
+.download-count{
+    font-weight: 100;
 }
 #c-box{
     display: none;
@@ -120,24 +137,25 @@ main{
     flex-direction: row;
 }
 .bottom-align img{
-    height: 20px;
-    padding-left: 40px;
+    display: flex;
+
+}
+.edit-delete-icon{
+    right: 0;
 }
 .main-content{
     margin: 10px;
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     flex-flow: wrap;
 }
 #file-btn{
     border-left: 3px solid var(--main-color);
 }
-.side-btn:hover{
-    color: var(--main-color);
-  }
+
   .main-img{
       box-sizing: border-box;
       border-radius: 10px 10px 0px 0px;
@@ -222,7 +240,9 @@ main{
         padding: 5px;
     }
 }
-
+aside{
+    width: 380px;
+}
 
 
 

@@ -5,22 +5,48 @@ main
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 25vw;
     height: fit-content;
-    margin: 50px auto 0 auto;
+    margin: 70px auto 0 auto;
     box-shadow: 2px 2px 5px gray;
     line-height: 50px;
 }
 .change-email{
+    margin: 0 40px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
+    color: var(--main-color);
+}
+.change-email-1{
+    text-decoration: none;
+    font-size: 11px;
     color: var(--main-color);
 }
 #txt2{
-     padding: 0 10px ;
+     padding: 0 50px ;
      line-height: 15px;
-
+     /* border: 1px solid red; */
 }
+/* ----------------------------------------------- */
+.digit-group input {
+		width: 30px;
+		height: 50px;
+		background-color: lighten(black, 5%);
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+		line-height: 50px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 200;
+		color: black;
+		margin: 0 2px;
+        margin: 10px;
+	}
+
+
+/* --------------------------------------------------- */
 .cont{
     margin: auto;
 }

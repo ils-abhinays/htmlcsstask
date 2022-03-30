@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/template-side-bar.css">    
     <link rel="stylesheet" href="stylesheets/report-style.css">
     <link rel="stylesheet" href="stylesheets/template-second.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,21 +21,21 @@
                 <img id="uep" src="images/uep.png" alt="">
                 <a href="notification.html"><img id="noti-img" src="icon-pngs/Notification.svg" alt=""></a>
             </div>
-            <label for="profile-toggle" id="profile-content">
-                <div class="p-content">
-                    <img id="profile-pic" src="images/Oval.png" alt="">
-                </div>
-                <div class="p-content2">
-                    <p>Chris Gayle</p>
-                    <p style="font-weight: bold; font-size: 13px;">Admin</p>
-                </div>
-            </label>
+            <div class="profile-side-container">
+                <label for="profile-toggle" id="profile-content">
+                    <div class="p-content">
+                        <img id="profile-pic" src="images/Oval.png" alt="">
+                    </div>
+                    <div class="p-content2">
+                        <p>Chris Gayle</p>
+                        <p style="font-weight: bold; font-size: 13px;">Admin</p>
+                    </div>
+                    <img class="sort-down" src="images/sort-down.svg" alt="">
+                </label>
+            </div>
             <input type="checkbox" id="profile-toggle">
             <div class="profile-toggle-sidebar">
-                <a href="your-profile.html" class="profile-toggle-sidebar-content">Your Profile</a>
-                <a href="" class="profile-toggle-sidebar-content">Settings</a>
-                <a href="" class="profile-toggle-sidebar-content">Update</a>
-                <a href="" class="profile-toggle-sidebar-content">Notification</a>
+                <a href="your-profile.html" class="profile-toggle-sidebar-content">Update Profile</a><hr>
                 <a href="" class="profile-toggle-sidebar-content">Logout</a>
             </div>
         </div>
@@ -52,9 +53,9 @@
         <aside>
             <div class="side-bar" id="report-btn">
                 <img src="icon-pngs/homepng.png" alt="">
-                <a href=".html" style="color: rgb(226, 21, 182);">Reports</a>
+                <a class="side-btn" href="report.html" style="color: var(--main-color);">Reports</a>
             </div>
-            <div class="side-bar">
+            <div class="side-bar" id="file-btn">
                 <img src="icon-pngs/imageicon.png" alt="">
                 <a class="side-btn" href="files.html">Files</a>
             </div>
@@ -75,11 +76,11 @@
                 <a class="side-btn" href=".html">Producers</a>
             </div>
             <div class="side-bar">
-                <img src="icon-pngs/icon-order.png" alt="">
+                <img src="icon-pngs/product.svg" alt="">
                 <a class="side-btn" href=".html">orders</a>
             </div>
             <div class="side-bar">
-                <img src="icon-pngs/icon-chat.png" alt="">
+                <img src="icon-pngs/chatboxes.svg" alt="">
                 <a class="side-btn" href=".html">Zendesk chat</a>
             </div>
         </aside>
@@ -88,24 +89,24 @@
                 <h1>Reports</h1>
                 <div class="reports-box-div">
                     <div class="reports-box">
-                        <p class="reports-heading">Total customer</p>
                         <p class="report-count">13,000</p>
+                        <p class="reports-heading">Total customer</p>
                     </div>
                     <div class="reports-box">
-                        <p class="reports-heading">Videos Download</p>
                         <p class="report-count">40M</p>
+                        <p class="reports-heading">Videos Download</p>
                     </div>
                     <div class="reports-box">
-                        <p class="reports-heading">Image Download</p>
                         <p class="report-count">10M</p>
+                        <p class="reports-heading">Image Download</p>
                     </div>
                     <div class="reports-box">
-                        <p class="reports-heading">Event Created</p>
                         <p class="report-count">1200</p>
+                        <p class="reports-heading">Event Created</p>
                     </div>
                     <div class="reports-box">
-                        <p class="reports-heading">Sales Report Count</p>
                         <p class="report-count">150</p>
+                        <p class="reports-heading">Sales Report Count</p>
                     </div>
                 </div>
             </div>
@@ -120,9 +121,9 @@
                             <div class="top-content-of-chart">
                                 <h3>All Downloads</h3>
                                 <label for="three-dot-1" class="three-dot">
-                                            <p></p>
-                                            <p></p>
-                                            <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
                                 </label>
                                 <input type="checkbox" id="three-dot-1">
                                 <div class="three-dot-list">
@@ -138,9 +139,9 @@
                             <div class="top-content-of-chart">
                                 <h3>Image Downloads</h3>
                                 <label for="three-dot-2" class="three-dot">
-                                            <p></p>
-                                            <p></p>
-                                            <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
                                 </label>
                                 <input type="checkbox" id="three-dot-2">
                                 <div id="tdl" class="three-dot-list">
@@ -156,9 +157,9 @@
                             <div class="top-content-of-chart">
                                 <h3>Image Downloads</h3>
                                 <label for="three-dot-3" class="three-dot">
-                                            <p></p>
-                                            <p></p>
-                                            <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
                                 </label>
                                 <input type="checkbox" id="three-dot-3">
                                 <div class="three-dot-list">
@@ -174,9 +175,9 @@
                             <div class="top-content-of-chart">
                                 <h3>Event Creation</h3>
                                 <label for="three-dot-4" class="three-dot">
-                                            <p></p>
-                                            <p></p>
-                                            <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
                                 </label>
                                 <input type="checkbox" id="three-dot-4">
                                 <div class="three-dot-list">
@@ -194,11 +195,9 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>All Right &copy Reserve</p>
-    </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 <script src="chart.js"></script>
+
 </html>

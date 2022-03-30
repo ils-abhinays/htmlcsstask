@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/template-side-bar.css">
     <link rel="stylesheet" href="stylesheets/file-style.css">
     <link rel="stylesheet" href="stylesheets/template-second.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,16 +29,12 @@
                     <p>Chris Gayle</p>
                     <p style="font-weight: bold; font-size: 13px;">Admin</p>
                 </div>
+                <img class="sort-down" src="images/sort-down.svg" alt="">
             </label>
             <input type="checkbox" id="profile-toggle">
             <div class="profile-toggle-sidebar">
-                <a href="your-profile.html" class="profile-toggle-sidebar-content">Your Profile</a>
-                <a href="" class="profile-toggle-sidebar-content">Settings</a>
-                <a href="" class="profile-toggle-sidebar-content">Update</a>
-                <a href="" class="profile-toggle-sidebar-content">Notification</a>
+                <a href="your-profile.html" class="profile-toggle-sidebar-content">Update Profile</a><hr>
                 <a href="" class="profile-toggle-sidebar-content">Logout</a>
-            </div>
-
         </div>
         <div class="toggle">
             <label for="c-box">
@@ -56,7 +53,7 @@
             </div>
             <div class="side-bar" id="file-btn">
                 <img src="icon-pngs/imageicon.png" alt="">
-                <a class="side-btn" href=".html" style="color: rgb(226, 21, 182);">Files</a>
+                <a class="side-btn" href=".html" style="color: var(--main-color);">Files</a>
             </div>
             <div class="side-bar">
                 <img src="icon-pngs/icon-cal.png" alt="">
@@ -75,121 +72,132 @@
                 <a class="side-btn" href=".html">Producers</a>
             </div>
             <div class="side-bar">
-                <img src="icon-pngs/icon-order.png" alt="">
+                <img src="icon-pngs/product.svg" alt="">
                 <a class="side-btn" href=".html">orders</a>
             </div>
             <div class="side-bar">
-                <img src="icon-pngs/icon-chat.png" alt="">
+                <img src="icon-pngs/chatboxes.svg" alt="">
                 <a class="side-btn" href=".html">Zendesk chat</a>
             </div>
         </aside>
         <div class="main">
             <div id="heading">
-                <h1>Files</h1>
+                <div class="top-heading-and-nav">
+                    <h1>Files</h1>
+                    <div class="top-navigation-div">
+                        <a href="#" class="top-navigation">Events</a>
+                        <label for="" class="nav-arrow">></label>
+                        <a href="#" class="top-navigation">Folders</a>
+                        <label for="" class="nav-arrow">></label>
+                        <a href="#" class="top-navigation">Party Hub Pass</a>
+                        <label for="" class="nav-arrow">></label>
+                        <a href="#" class="top-navigation">Event Decoration</a>
+                    </div>
+                </div>
                 <button id="add-file-btn">+ Add File</button>
-            </div>
+            </div> <hr class="break-line">
             <div class="main-content">
                 <div class="img-container">
                     <img id="img-a" src="images/bvss.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test()" style=" text-decoration: none;">
-                        <p style="color: rgb(226, 21, 182);" id="heading-a">Batman vs Superman</p>
+                        <p style="color: var(--main-color);" id="heading-a" class="img-link-click">Batman vs Superman</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img id="one-img" src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img id="images" src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img id="one-img" src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img id="images" src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- ------------------------------b------------------------------- -->
                 <div class="img-container">
                     <img id="img-b" src="images/iranman.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test2();" style=" text-decoration: none;">
-                        <p id="heading-b" style="color: rgb(226, 21, 182);">Iran Man</p>
+                        <p id="heading-b" style="color: var(--main-color);" class="img-link-click">Iran Man</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- ------------------------------c------------------------------- -->
                 <div class="img-container">
                     <img id="img-c" src="images/joker.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test3()" style=" text-decoration: none;">
-                        <p id="heading-c" style="color: rgb(226, 21, 182);">Joker</p>
+                        <p id="heading-c" style="color: var(--main-color);" class="img-link-click">Joker</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- -------------------------------d------------------------------ -->
                 <div class="img-container">
                     <img id="img-d" src="images/nature1.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test4()" style=" text-decoration: none;">
-                        <p id="heading-d" style="color: rgb(226, 21, 182);">Nature Waterfall</p>
+                        <p id="heading-d" style="color: var(--main-color);" class="img-link-click">Nature Waterfall</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- -------------------------------e------------------------------- -->
                 <div class="img-container">
                     <img id="img-e" src="images/avenger.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test5()" style=" text-decoration: none;">
-                        <p id="heading-e" style="color: rgb(226, 21, 182);">Avengers Team</p>
+                        <p id="heading-e" style="color: var(--main-color);" class="img-link-click">Avengers Team</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- --------------------------------f----------------------------- -->
                 <div class="img-container">
                     <img id="img-f" src="images/batman.png" alt="" class="main-img">
                     <a href="view-img.html" onclick="test6()" style=" text-decoration: none;">
-                        <p id="heading-f" style="color: rgb(226, 21, 182);">Batman </p>
+                        <p id="heading-f" style="color: var(--main-color);" class="img-link-click">Batman </p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- ------------------------------g-------------------------------- -->
                 <div class="img-container">
                     <img id="img-g" src="images/nature2.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test7()" style=" text-decoration: none;">
-                        <p id="heading-g" style="color: rgb(226, 21, 182);">Natural View</p>
+                        <p id="heading-g" style="color: var(--main-color);" class="img-link-click">Natural View</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
                 <!-- ------------------------------h-------------------------------- -->
                 <div class="img-container">
                     <img id="img-h" src="images/avenger2.jpg" alt="" class="main-img">
                     <a href="view-img.html" onclick="test8()" style=" text-decoration: none;">
-                        <p id="heading-h" style="color: rgb(226, 21, 182);">Avengers</p>
+                        <p id="heading-h" style="color: var(--main-color);" class="img-link-click">Avengers</p>
                     </a>
-                    <p>Download Count:10k</p>
+                    <p class="download-count-word">Download Count:<label class="download-count"></label></p>
                     <div class="bottom-align">
                         <p class="date"></p>
-                        <a href=""><img src="icon-pngs/icon-edit.png" alt="" class="edit-delete-icon"></a>
-                        <a href=""><img src="icon-pngs/icon-delete.png" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/edit.svg" alt="" class="edit-delete-icon"></a>
+                        <a href=""><img src="icon-pngs/delete.svg" alt="" class="edit-delete-icon"></a>
                     </div>
                 </div>
             </div>
@@ -206,6 +214,11 @@
     for (let i = 0; i < c.length; i++) {
         c[i].innerHTML = d + "/" + m + "/" + y;
     }
+    let xxy=321;
+    let dc=document.getElementsByClassName("download-count");
+    for (let j = 0; j < dc.length; j++) {
+        dc[j].innerHTML = 321;
+    }
 </script>
-
+<script src="j-script.js"></script>
 </html>

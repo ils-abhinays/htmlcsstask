@@ -2,33 +2,14 @@
     margin: 0;
     padding: 0;
 }
-.side-bar img{
-    display: inline-block;
-    width: 20px;
-}
-.side-bar{
-    padding: 15px;
-}
-.side-bar a{
-    text-decoration: none;
-    color: black;
-    width: 20em;
-    text-align: left;
-    font-size: 20px;
-}
-aside{
-    display: inline-block;
-    width:28vw;
-    background-color: white;
-    height: 90vh;
-    box-shadow: 0px 5px 5px gray;
-
-}
 
 .reports h1{
     color: black;
+    margin: 20px;
+    font-size: 32px;
 }
 .reports-box-div{
+    margin-left: 10px;
     width: 100%;
     height: auto;
     display: flex;
@@ -38,16 +19,23 @@ aside{
 .reports-box{
     box-sizing: border-box;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px gray;
     height: 80px;
-    width: 160px;
-    text-align: center;
+    width: 200px;
+    text-align: left;
+    padding-left: 15px;
     margin: 10px;
 }
 .report-count{
-    padding: 10px;
+    padding:  10px 0;
+    font-weight: bold;
     font-size: 25px;
+}
+.visual-report h1{
+    color: black;
+    margin: 20px;
+    font-size: 32px;
 }
 main{
     display: flex;
@@ -61,11 +49,9 @@ main{
     display: none;
 }
 #report-btn{
-    border-left: 3px solid rgb(226, 21, 182);
+    border-left: 3px solid var(--main-color);
 }
-.side-btn:hover{
-    color: rgb(226, 21, 182);
-}
+
 footer{
     text-align: center;
     color: white;
@@ -82,11 +68,11 @@ footer p{
     box-sizing: border-box;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 1px 1px 4px gray;
     height: auto;
     width: auto;
     text-align: center;
-    margin: 10px;
+    margin-left: 20px;
 }
 .pie{
      display: flex;
@@ -181,7 +167,7 @@ footer p{
     color: black; 
 }
 .three-dot-content:hover{
-    color: rgb(226, 21, 182);
+    color: var(--main-color);
 }
 
 /* ============================================= */
@@ -194,6 +180,7 @@ canvas{
     flex-direction: row;
     flex-flow: wrap;
 }
+
 /* ---------------------------------------------- */
 /* ------------------------------------------------ */
 @media screen and (max-width: 450px){
@@ -239,13 +226,13 @@ canvas{
         border: 1px solid black;
         background-color: black;
     }
-    aside{
+    /* aside{
         display: none;
         width: 200px;
         background-color: white;
         height: 90vh;
         position:fixed;
-    }
+    } */
     #profile-content{
         margin: 20px;
         display: flex;
@@ -370,13 +357,13 @@ canvas{
         border: 1px solid black;
         background-color: black;
     }
-    aside{
-        display: none;
-        width: 300px;
-        background-color: white;
-        height: 90vh;
-        position:fixed;
-    }
+        /* aside{
+            display: none;
+            width: 300px;
+            background-color: white;
+            height: 90vh;
+            position:fixed;
+        } */
 
 
     .reports-box-div{
@@ -457,4 +444,11 @@ canvas{
     }
     /* ---------------------------------------------- */
 
+}
+.side-bar img{
+    display: inline-block;
+    width: 15px;
+    padding: 0 5px;
+    /* padding-top: 13px; */
+    margin-left: 2px;
 }

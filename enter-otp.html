@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,69 @@
     <link rel="stylesheet" href="stylesheets/enter-otp-style.css">
     <link rel="stylesheet" href="stylesheets/template-initial.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img id="uep" src="images/uep.png" alt="">
-       
+
     </header>
-    <p id="box">   </p>
+    <p id="box"> </p>
     <main>
-       <h2 id="top-heading">Please Enter OTP</h2>
-       <p style="font-size: 13px;" id="txt2">Please Enter One Time Password We Sent To Your Email example@mail.com</p>
-       <a href="forgot-pass.html" class="change-email">Change</a>
-       <div class="otp-container">
-           <input class="otp" type="number" placeholder="">
-           <input class="otp" type="number" placeholder="">
-           <input class="otp" type="number" placeholder="">
-           <input class="otp" type="number" placeholder="">
-        </div>
+        <h2 id="top-heading">Please Enter OTP</h2>
+            <p style="font-size: 13px;" id="txt2">Please Enter One Time Password We Sent To Your Email
+                example@mail.com<a href="forgot-pass.html" class="change-email-1">(Change)</a></p>
+        <!-- <div class="otp-container">
+            <input class="otp" type="number" placeholder="">
+            <input class="otp" type="number" placeholder="">
+            <input class="otp" type="number" placeholder="">
+            <input class="otp" type="number" placeholder="">
+        </div> -->
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+            <input type="text" id="digit-6" name="digit-4" data-previous="digit-3" />
+        </form>
+
         <div class="cont">
-            <button id="next-btn">NEXT</button>
+            <a href="update-pass.html"><button id="next-btn">NEXT</button></a>
         </div>
-       <span>
-           <a href="forgot-pass.html"id="go-back" class="change-email">Go Back</a>
-           <a href="" class="change-email">Re-Send OTP</a>
+        <span>
+            <a href="forgot-pass.html" id="go-back" class="change-email">Go Back</a>
+            <a href="" class="change-email">Resend OTP</a>
         </span>
     </main>
     <footer>
-     <p>All Rights &copy Reserve</p>
+        <p>All Rights &copy Reserve</p>
     </footer>
 </body>
+<script>
+    $('.digit-group').find('input').each(function() {
+	$(this).attr('maxlength', 1);
+	$(this).on('keyup', function(e) {
+		var parent = $($(this).parent());
+		
+		if(e.keyCode === 8 || e.keyCode === 37) {
+			var prev = parent.find('input#' + $(this).data('previous'));
+			
+			if(prev.length) {
+				$(prev).select();
+			}
+		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+			var next = parent.find('input#' + $(this).data('next'));
+			
+			if(next.length) {
+				$(next).select();
+			} else {
+				if(parent.data('autosubmit')) {
+					parent.submit();
+				}
+			}
+		}
+	});
+});
+</script>
 </html>

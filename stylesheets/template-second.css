@@ -28,7 +28,7 @@ body{
 }
 #noti-img{
   position: absolute;
-  right: 300px;
+  right: 350px;
   padding: 20px;
   margin-top: -5px;
   border-left: 1px solid white;
@@ -45,6 +45,7 @@ body{
     position: absolute;
     right: 120px;
     top: -3px;
+    /* border: 1px solid blue; */
 }
 #profile-pic{
     height: 40px;
@@ -52,38 +53,64 @@ body{
     filter: none;
     display: flex;
     position: absolute;
-    right: 100px;
+    right: 150px;
     top: 6px;
 }
 #profile-toggle{
     display: none;
 }
+
 .profile-toggle-sidebar{
     z-index: 20;
+    
     display: none;
 }
-#profile-toggle:checked + .profile-toggle-sidebar
+#profile-toggle:hover + .profile-toggle-sidebar
 {
     display: flex;
 }
+
+    
+
 .profile-toggle-sidebar{
     flex-direction: column;
     position:fixed;
-    top: 80px;
-    right: 20px;
+    top: 65px;
+    right: 170px;
     background-color: white;
+    border-radius: 5px;
     box-shadow: 2px 2px 5px gray;
 }
 .profile-toggle-sidebar-content{
     text-decoration: none;
     color: black;
-    padding: 15px 40px 15px 40px;
-    font-size: 20px;
-    border-bottom: 1px solid black;
+    padding: 10px 50px 10px 10px;
+    font-size: 15px;
+    /* border-bottom: 1px solid black; */
 }
 .profile-toggle-sidebar-content:hover{
     color: var(--main-color);
 }
+.profile-side-container{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+}
+.p-content2{
+   padding-right: 40px;
+
+}
+.sort-down:hover{
+   transform: matrix(-1, 0, 0, -1, 0, 0);
+   transition: 1s;
+}
+/* .profile-side-container:hover + .sort-down
+{
+   transform: matrix(-1, 0, 0, -1, 0, 0);;
+   transition: 1s;
+} */
+
+
 /* ------------------------------------------------------------- */
 footer{
     text-align: center;
