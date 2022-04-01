@@ -21,65 +21,23 @@
         <main>
             <h2 class="inner-element" id="login-label">Login</h2>
             <p class="inner-element" id="text2">Please enter your email id and password</p>
-            <form action="" class="inner-element" id="form">
+            <form action="" class="inner-element" id="form" onsubmit="return validform()">
                 <input id="email" class="idpass" type="email" placeholder="Email">
+                <div id="e-msg" class="error-box"></div>
                 <input id="password" class="idpass" type="password" placeholder="Password">
-                <br>
+                <div id="p-msg" class="error-box"></div>
                 <div>
                     <a href="forgot-pass.html" id="forgot-pass">Forgot Password?</a>
                     <input type="checkbox"> <label for="" id="remember-me">Remember me</label>
                 </div>
                 <br>
-                <a class="inner-elemet"><button type="submit" id="login-btn">LOGIN</button></a>
+                <button type="submit" id="login-btn">LOGIN</button>
             </form>
-            <div id="e-msg" class="error-box"></div>
-            <div id="p-msg" class="error-box"></div>
         </main>
     </div>
     <footer>
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
-<script>
-    // window.addEventListener('click', reload());
-    let pass = document.getElementById('password');
-    let form = document.getElementById('form');
-    let email = document.getElementById('email');
-    var e_msg = document.getElementById("e-msg");
-    var p_msg = document.getElementById("p-msg");
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    form.addEventListener('submit', (e) => {
-
-        let msge = []
-        let msge2 = []
-        if(email.value == ''){
-            msge.push("email cannot be empty !");
-        }
-        if(pass.value == ''){
-            msge2.push("password cannot be empty !");
-        }
-        if (email.value.match(mailformat)){
-            msge.push("valid");
-        }
-        else if(email.value != ''){
-            msge.push("invalid email");
-        }
-       if ((pass.value.length <= 7 && pass.value.length!=0) || pass.value.length >= 9) {
-                msge2.push("Password should be 8 charecters");
-            }
-            if (pass.value.length==8) {
-                msge2.push("valid");
-            }
-        if (msge.length > 0) {
-            e.preventDefault()
-            e_msg.innerText = msge.join(', ')
-        }
-        if (msge.length > 0) {
-            e.preventDefault()
-            p_msg.innerText = msge2.join(', ')
-        }
-    })
-
-</script>
-
+<script src="js/login-valid.js"></script>
 </html>

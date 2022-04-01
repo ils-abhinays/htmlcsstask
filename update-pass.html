@@ -21,13 +21,45 @@
        <h2 style="padding-top: 50px;">Update Password</h2>
        <p style="font-size: 13px">Please enter new password</p>
        <div class="input-and-btn">
-           <input id="pass" class="password" type="text" placeholder="Enter New Password">
-           <input id="cpass" class="password" type="text" placeholder="Confirm Password">
-           <button id="submit-btn">SUBMIT</button>
+           <form action="" onsubmit="return passvalid()">
+               <input id="pass" class="password" type="text" placeholder="Enter New Password">
+               <p id="e-msg" class="error-box"></p>
+               <input id="cpass" class="password" type="text" placeholder="Confirm Password">
+               <p id="e-msg-match" class="error-box"></p>
+               <button id="submit-btn" type="submit">SUBMIT</button>
+            </form>
         </div>
     </main>
     <footer>
      <p>All Rights &copy Reserve</p>
     </footer>
 </body>
+<script>
+    let pass1=document.getElementById("pass");
+    let pass2=document.getElementById("cpass");
+
+    function passvalid(){
+        if(pass1.value == ''){
+              document.getElementById("e-msg").innerHTML=("password cannot be empty !"); 
+            }else if((pass1.value.length <= 7 && pass1.value.length!=0) || pass1.value.length >= 9) {
+                document.getElementById("e-msg").innerHTML=("Password should be 8 charecters");
+              }else{
+                document.getElementById("e-msg").innerHTML=("");
+              }
+
+              if(pass2.value == ''){
+              document.getElementById("e-msg-match").innerHTML=("password cannot be empty !"); 
+            }else if(pass1.value!=pass2.value) {
+                document.getElementById("e-msg-match").innerHTML=("please type same password");
+              }else{
+                document.getElementById("e-msg-match").innerHTML=("");
+              }
+             if(pass1.value!=''){
+                 if(pass1.value == pass2.value){
+                     document.write("password change successfully........")
+                 }
+             }
+      return false;
+    }
+</script>
 </html>

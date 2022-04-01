@@ -5,35 +5,12 @@
 }
 .error-box
 {
-  z-index: 3;
-  position:fixed;
-  right: 650px;
-  top: 320px;
   font-size: 12px;
-  border-radius: 5px;
-  padding: 4px;
+  padding: 0;
+  margin: 0;
   background-color: white;
-  color: var(--main-color);
-  box-shadow: 1px 1px 5px gray;
+  color: red;
 }
-#p-msg{
-    right: 650px;
-    top: 380px;
-}
-/* .error-box{
-    margin-top: 40px;
-  }
-  
-  .error-box:after {
-    content: " ";
-    position: relative;
-    right: 60px;
-    top: -15px;
-    border-top: none;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid rgb(228, 228, 228);
-  } */
 main
 { 
     background-color: white;

@@ -22,23 +22,21 @@
     <main>
         <h2 id="top-heading">Please Enter OTP</h2>
             <p style="font-size: 13px;" id="txt2">Please Enter One Time Password We Sent To Your Email
-                example@mail.com<a href="forgot-pass.html" class="change-email-1">(Change)</a></p>
+                    <a href="forgot-pass.html" class="change-email-1">(Change)</a></p>
         <!-- <div class="otp-container">
             <input class="otp" type="number" placeholder="">
             <input class="otp" type="number" placeholder="">
             <input class="otp" type="number" placeholder="">
             <input class="otp" type="number" placeholder="">
         </div> -->
-        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
-            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-            <input type="text" id="digit-6" name="digit-4" data-previous="digit-3" />
+        <form method="get" class="digit-group" data-autosubmit="false" autocomplete="off" onsubmit="return otpvalid()">
+            <input type="text" id="one" name="digit-1" maxlength="1" onkeyup="fornextnum(this,'two')" />
+            <input type="text" id="two" name="digit-2" maxlength="1" onkeyup="fornextnum(this,'three')" />
+            <input type="text" id="three" name="digit-3" maxlength="1" onkeyup="fornextnum(this,'four')"/>
+            <input type="text" id="four" name="digit-4" maxlength="1" />
+            <p id="e-msg" class="error-box"></p>
+            <button id="next-btn" type="submit">NEXT</button>
         </form>
-
-        <div class="cont">
-            <a href="update-pass.html"><button id="next-btn">NEXT</button></a>
-        </div>
         <span>
             <a href="forgot-pass.html" id="go-back" class="change-email">Go Back</a>
             <a href="" class="change-email">Resend OTP</a>
@@ -49,29 +47,38 @@
     </footer>
 </body>
 <script>
-    $('.digit-group').find('input').each(function() {
-	$(this).attr('maxlength', 1);
-	$(this).on('keyup', function(e) {
-		var parent = $($(this).parent());
-		
-		if(e.keyCode === 8 || e.keyCode === 37) {
-			var prev = parent.find('input#' + $(this).data('previous'));
-			
-			if(prev.length) {
-				$(prev).select();
-			}
-		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
-			var next = parent.find('input#' + $(this).data('next'));
-			
-			if(next.length) {
-				$(next).select();
-			} else {
-				if(parent.data('autosubmit')) {
-					parent.submit();
-				}
-			}
-		}
-	});
-});
+ 
+//  let otp="1234"
+let otp1= document.getElementById("one");
+let otp2= document.getElementById("two");
+let otp3= document.getElementById("three");
+let otp4= document.getElementById("four");
+
+ function otpvalid()
+ {
+  let otp=otp1.value + otp2.value + otp3.value + otp4.value;
+  if(otp1.value=='' ||otp2.value=='' || otp3.value=='' || otp4.value==''){
+    document.getElementById("e-msg").innerHTML=("please fill 4 digit otp !");
+  }else  if(otp == '1234'){
+      window.location.href="update-pass.html";
+   }else{
+    document.getElementById("e-msg").innerHTML=("wrong otp !");
+
+   }
+//    {
+//     document.getElementById("e-msg").innerHTML=("");
+
+//   }
+ 
+  return false;
+ }
+
+//  ==============================
+function fornextnum(first,sec){
+  if(first.value.length){
+      document.getElementById(sec).focus();
+  }
+
+ }
 </script>
 </html>

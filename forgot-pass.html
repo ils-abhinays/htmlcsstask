@@ -23,8 +23,11 @@
             <h2 class="inner-content" style="padding-top: 50px;">Forgot Password</h2>
             <p class="inner-content" style="font-size: 13px;">Please enter your email id</p>
             <div class="container4">
-                <input id="email" class="idpass" type="email" placeholder="Email">
-                <a href="enter-otp.html"><button id="next-btn">NEXT</button></a>
+                <form action="" class="forgot-pass-form" onsubmit="return forgotpassvalid()">
+                    <input id="email" class="idpass" type="email" placeholder="Email">
+                    <p id="e-msg" class="error-box"></p>
+                    <button id="next-btn" type="submit">NEXT</button>
+                </form>
             </div>
         </main>
     </div>
@@ -32,5 +35,29 @@
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
-
+<script>
+  let email=document.getElementById("email");
+  let flag=1;
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  function forgotpassvalid(){
+    if(email.value == ''){
+        document.getElementById("e-msg").innerHTML=("email cannot be empty !");
+        flag=0;
+       }else if(!email.value.match(mailformat))
+            { 
+              document.getElementById("e-msg").innerHTML=("invalid email !");
+              flag=0;
+            }else{
+              document.getElementById("e-msg").innerHTML=("");
+            }
+         
+            if(email.value.match(mailformat))
+            { 
+            //   document.getElementById("e-msg").innerHTML=("invalid email !");
+               window.location.href="enter-otp.html";
+            }   
+            
+            return false;
+  }
+</script>
 </html>
