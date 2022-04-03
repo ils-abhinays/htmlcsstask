@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add image</title>
+<style>
+    .heading-label{
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+    .img-inputs{
+        line-height: 40px;
+    }
+    #second-container input{
+      width: 300px;
+      height: 30px;
+      border-radius: 50px;
+    }
+    #second-container input::placeholder{
+        padding-left: 20px;
+    }
+    #third-container input{
+      width: 300px;
+      height: 200px;
+      border-radius: 50px;
+    }
+    #third-container input::placeholder{
+        padding-left: 20px;
+    }
+    button{
+        height: 40px;
+        width: 80px;
+        color: white;
+        background-color: rgb(8, 8, 255);
+        border-radius: 50px;
+    }
+    #imgview{
+        width: 500px;
+        height: 500px;
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <main>
+        <div class="img-inputs">
+            <form id="form2" action="" onsubmit="return imguplaod()">
+                <div id="first-container">
+                    <label for="" class="heading-label">Add file</label><br>
+                    <input type="file" id="img-input" name="" id="">
+                </div>
+                <div id="second-container">
+                    <label for="" class="heading-label">Title of the image</label><br>
+                    <input type="text" id="title-input" placeholder="Title">
+                </div>
+                <div id="third-container">
+                    <label for="" class="heading-label">Comment</label><br>
+                    <input type="text" placeholder="comment">
+                </div>
+                <button type="submit">Done</button>
+            </form>
+            <div id="img22">
+                <img src="" alt="" id="imgview">
+            </div>
+        </div>       
+    </main>
+</body>
+<script src="js/img-upload-js.js"></script>
+</html>

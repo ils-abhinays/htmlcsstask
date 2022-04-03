@@ -101,3 +101,10 @@ function test8()
     localStorage.setItem("val", y);
     return false;
 }
+
+// ======================================================
+
+let btn = document.getElementById("add-file-btn");
+btn.addEventListener('click', function(){
+    window.open("add-file-popup.html","g","height=500,width=500");
+})
