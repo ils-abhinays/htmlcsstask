@@ -17,8 +17,7 @@
             }else{
               document.getElementById("e-msg").innerHTML=("");
             }
-
-
+            
             if(pass.value == ''){
               document.getElementById("p-msg").innerHTML=("password cannot be empty !"); 
               flag=0;
@@ -43,10 +42,5 @@
                         }
                      }
                     }
-
-    //    if(flag){
-    //        return true;
-    //    }else{
            return false;
-    //    }
   }

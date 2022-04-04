@@ -23,19 +23,23 @@
         <main>
             <h2 class="inner-content" id="signup-label">Signup</h2>
             <p class="inner-content">Please Fill The Details Blow</p>
-            <form  class="inner-content" action="">
+            <form id="form" class="inner-content" action="" onsubmit="return signupvalid()">
                 <input id="email" class="idpass" type="email" placeholder="email">
-                <input type="text" class="idpass" placeholder="username">
+                  <p id="email-err" class="error-box"></p>
+                <input id="uname" type="text" class="idpass" placeholder="username">
+                  <p id="uname-err" class="error-box"></p>
+                <input id="mob-number" class="idpass" type="text" placeholder="mobile">
+                  <p id="mob-num-err" class="error-box"></p>
                 <input id="password" class="idpass" type="password" placeholder="password">
-                <input id="password" class="idpass" type="password" placeholder="re-enter password">
+                  <p id="pass-err" class="error-box"></p>
+                     <a href="" id="help">Help</a><br>
+                  <button class="inner-content" type="submit" id="login-btn">Signup</button>
             </form>
-            <a href="" id="help">Help</a>
-            <button class="inner-content" id="login-btn">Signup</button>
         </main>
     </div>
     <footer>
         <p>All Right &copy Reserve</p>
     </footer>
 </body>
-
+<script src="js/signup-valid.js"></script>
 </html>
